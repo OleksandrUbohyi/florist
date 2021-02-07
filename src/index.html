@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="main.min.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <img src="./images/header-logo.svg" alt="" />
+                    <img
+                        src="./images/header-menu-btn.svg"
+                        alt=""
+                        class="header__hamburger"
+                    />
+                </div>
+            </div>
+            <div class="header__bottom">
+                <h1 class="header__title">Флористика с&nbsp;душой</h1>
+                <a href="#" class="header__watch-works">Смотреть работы</a>
+                <div class="social-links">
+                    <a
+                        href="#"
+                        class="social-links__item social-links__instagram"
+                    ></a>
+                    <a
+                        href="#"
+                        class="social-links__item social-links__facebook"
+                    ></a>
+                    <a
+                        href="#"
+                        class="social-links__item social-links__viber"
+                    ></a>
+                    <a
+                        href="#"
+                        class="social-links__item social-links__vkontakte"
+                    ></a>
+                </div>
+            </div>
+            <div class="swipe">
+                <a href="#catalog">
+                    <img
+                        src="./images/arrow-down.svg"
+                        alt="swipe down"
+                        class="swipe__down bounce"
+                    />
+                </a>
+            </div>
+        </header>
+
+        <section class="catalog">
+            <div class="container">
+                <h2 class="section-title" id="catalog">Каталог услуг</h2>
+
+                <div class="swiper-container catalog__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="swiper-slide__number">1</span>
+                                <img src="./images/slider-1.jpg" alt="" />
+                                <h3 class="swiper-slide__title">
+                                    букет невесты и свадебное оформление
+                                </h3>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="swiper-slide__number">2</span>
+                                <img src="./images/slider-2.jpg" alt="" />
+                                <h3 class="swiper-slide__title">
+                                    букеты на торжества
+                                </h3>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="swiper-slide__number">3</span>
+                                <img src="./images/slider-3.jpg" alt="" />
+                                <h3 class="swiper-slide__title">композиции</h3>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <span class="swiper-slide__number">4</span>
+                                <img src="./images/slider-4.jpg" alt="" />
+                                <h3 class="swiper-slide__title">
+                                    оформление мероприятий
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="actions">
+            <div class="container">
+                <img
+                    src="./images/actions-image.jpg"
+                    alt=""
+                    class="actions__image"
+                />
+                <div class="actions__content">
+                    <h2 class="section-title actions__title">
+                        акционные <br />
+                        предложения
+                    </h2>
+                    <p class="actions__description">
+                        При заказе свадебного оформления предоставляется скидка
+                        на букет невесты и бутоньерку в размере 30%
+                    </p>
+                    <button class="actions__order" type="button">
+                        Заказать оформление
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer__links">
+                    <li>
+                        <a href="#">Cвадебная флористика</a>
+                    </li>
+                    <li>
+                        <a href="#">Букеты на любые мероприятия</a>
+                    </li>
+                    <li>
+                        <a href="#">Букеты невесты</a>
+                    </li>
+                    <li>
+                        <a href="#">Композиции</a>
+                    </li>
+                    <li>
+                        <a href="#">Оформление мероприятий</a>
+                    </li>
+                </ul>
+                <div class="social-links">
+                    <a
+                        href="#"
+                        class="social-links__item social-links__instagram"
+                    ></a>
+                    <a
+                        href="#"
+                        class="social-links__item social-links__facebook"
+                    ></a>
+                    <a
+                        href="#"
+                        class="social-links__item social-links__viber"
+                    ></a>
+                    <a
+                        href="#"
+                        class="social-links__item social-links__vkontakte"
+                    ></a>
+                </div>
+            </div>
+        </footer>
+
+        <div id="myNav" class="overlay">
+            <div class="overlay__top">
+                <img src="./images/header-logo.svg" alt="Весна всегда" />
+                <button class="overlay__close" onclick="closeNav()">
+                    <img
+                        src="./images/close-btn.svg"
+                        alt=""
+                        class="close-btn"
+                    />
+                </button>
+            </div>
+
+            <div class="overlay__content">
+                <h2>свадебная флористика</h2>
+                <a href="#">букеты на любые мероприятия</a>
+                <a href="#">букеты невесты</a>
+                <a href="#">композиции</a>
+                <a href="#">оформление мероприятий</a>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="main.min.js"></script>
+    </body>
+</html>
